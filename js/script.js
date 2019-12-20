@@ -1,7 +1,3 @@
-$(document).on("click", '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-  });
 
   $(function() {
     $('.chart').easyPieChart({
@@ -24,3 +20,4 @@ function myFunction() {
   let scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+

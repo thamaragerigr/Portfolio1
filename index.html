@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="shortcut icon" 
-    href="blob.png">
+    href="images/blob.png">
     <title>Thamara Gerig</title>
     <!--Metas-->
     <meta charset="UTF-8" />
@@ -10,16 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Archivos externos-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!--Fontawesome link-->
     <script src="https://kit.fontawesome.com/afa329d86a.js" crossorigin="anonymous"></script>
@@ -68,6 +61,7 @@
                 <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
                 </svg>
               </div>
+              
               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span class="etiquetas">&lt;h1&gt;</span><br>
               <h1>&nbsp;hola,<br><span id="intro-span">soy thamara</span></h1>
               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span class="etiquetas">&lt;/h1&gt;</span><br>
@@ -87,12 +81,22 @@
                 verdadera pasión mía. Asimismo, activamente busco informarme de
                 nuevas tecnologías y mantenerme al tanto de las tendencias y avances de la industria.
             </p>
-            <a href="CV (1).pdf" target="_blank"><i class="far fa-file-pdf"></i>Curriculum Vitae</a><br>
+            <a href="CV (1).pdf" target="_blank"><i class="far fa-file-pdf"></i>Curriculum Vitae</a><br><br>
             <span class="etiquetas">&lt;/div&gt;</span>
         </div><!--Sobre mi-->
 
-        <!--Educacion-->
+
+
+        <!--Educacion/Experiencia-->
         <div id="educacion">
+          <h2 class="titulo-educacion">Experiencia</h2>
+          <span class="educacion-span">Desarrollo Web Front-End | 2019</span>
+          <p>Fundación Telefónica</p>
+          <p class="educacion-descripcion">Desarrollo de proyecto en conjunto con Fundación Telefónica a través de su programa
+            "Desarrollo Web Front-End"</p>
+
+            
+           
             <h2 class="titulo-educacion">Educación</h2>
             <div class="grid-container">
             <div class="educacion1">
@@ -184,29 +188,88 @@
         <!--Portfolio-->
         <div id="portfolio">
             <h2>Portfolio</h2>
-                <div class="row">
-                  <a href="AdivinaElColor.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="AdivinaElColor.png" class="img-fluid rounded">
-                  </a>
-                  <a href="piedra-papel-o-tijera.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="piedra-papel-o-tijera.png" class="img-fluid rounded">
-                  </a>
-                  <a href="tip-calc.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="tip-calc.png" class="img-fluid rounded">
-                  </a>
-                </div>
-                <div class="row">
-                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-                  </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
-                  </a>
-                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-                    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
-                  </a>
-                </div>
-                
+              
+            <div class="gallery">
+        
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/AdivinaElColor.png" alt="Adivina el color">
+                      <figcaption> 
+                          <h3>Adivina el color</h3>
+                          <p class="caption-title">Juego de adivinanza.Consiste en calcular la respuesta correcta según el código de color RGB (Red,Blue,Green).</p>
+                          <a href="https://adivinaelcolor.netlify.com">¡Pincha aquí para verlo!</a><br>
+                          <a href="https://github.com/thamaragerigr/Adivina-el-color">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+          
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/piedra-papel-o-tijera.png" alt="Piedra, Papel o Tijera" >
+                      <figcaption>
+                        <h3>Piedra, Papel o Tijera</h3>
+                        <p class="caption-title">Proyecto basado en el clásico juego 'Piedra-Papel-o-Tijera'. </p>
+                        <a href="https://piedra-papel-o-tijera.netlify.com/">¡Pincha aquí para verlo!</a><br>
+                        <a href="https://github.com/thamaragerigr/Piedra-Papel-o-Tijera">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+          
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/tip-calc.png" alt="Tip Calculator">
+                      <figcaption>
+                        <h3>Tip Calculator</h3>
+                        <p class="caption-title">Calculador de propinas. Proyecto para expandirse proximamente y seleccionar un calculador según el país. </p>
+                        <a href="https://animalrooms.netlify.com">¡Pincha aquí para verlo!</a><br>
+                        <a href="https://github.com/thamaragerigr/Tip-calculator-">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+          
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/nostrud.png" alt="nostrud">
+                      <figcaption>
+                        <h3>nostrud</h3>
+                        <p class="caption-title">Página web para una panaderia</p>
+                        <a href="https://adivinaelcolor.netlify.com">¡Pincha aquí para verlo!</a><br>
+                        <a href="https://github.com/thamaragerigr/nostrud">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+          
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/animal-rooms.png" alt="Animal Rooms">
+                      <figcaption>
+                        <h3>Animal Rooms</h3>
+                        <p class="caption-title">Desarrollo de proyecto en conjunto con Fundación Telefónica.Página web para centro de mascotas. Incluye una herramienta para la localización de locales según los servicios utilizando un GeoJSON y API de Google Maps.</p>
+                        <a href="https://adivinaelcolor.netlify.com">¡Pincha aquí para verlo!</a><br>
+                        <a href="https://github.com/thamaragerigr/ANIMAL-ROOMS">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+  
+              <div class="gallery-item imageselect row add-clearfix image-imagebox">
+                <article class="imagebox">
+                  <figure><img class="gallery-image" src="images/shortly.png" alt="Shortly">
+                      <figcaption>
+                        <h3>Shortly</h3>
+                        <p class="caption-title">Proyecto en desarrollo</p>
+                        <a href="https://adivinaelcolor.netlify.com">¡Pincha aquí para verlo!</a><br>
+                        <a href="https://github.com/thamaragerigr/ANIMAL-ROOMS">GitHub</a>
+                      </figcaption>
+                  </figure>
+              </article>
+              </div>
+          
+            </div>
         </div><!--Portfolio-->
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="etiquetas">&lt;/main&gt;</span> <br>
@@ -259,24 +322,10 @@
     </main>
     <!--Container general-->
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="js/script.js"></script>
   </body>
 </html>
