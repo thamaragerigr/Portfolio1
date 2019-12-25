@@ -408,14 +408,16 @@ figcaption h3{
 }
 
 figcaption a{
-  color: rgb(238, 238, 238);
+  color: #eeff59;
   transition: .3s;
   font-weight: 500;
+  opacity: 0.6;
 }
 
 figcaption a:hover{
   color: #eeff59;
   text-decoration: none;
+  opacity: 1;
 }
 /*por si no tiene compatibilidad con el browser*/
 @supports (display: grid) {
